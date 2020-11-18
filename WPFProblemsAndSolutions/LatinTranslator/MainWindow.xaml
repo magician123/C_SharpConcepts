@@ -1,0 +1,60 @@
+﻿<Window x:Class="LatinTranslator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LatinTranslator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Margin="0,0,0,10">
+            Latin
+        </Label>
+
+        <Label Grid.Column="1">
+            English
+            
+        </Label>
+
+        <Button x:Name="buttonSinister"
+                Grid.Row="1"
+                Content="sinister"
+                Click="buttonSinister_Click"/>
+
+
+        <Button x:Name="buttonDexter"
+                Grid.Row="2" 
+                Content="dexter"
+                Click="buttonDexter_Click"/>
+
+
+        <Button x:Name="buttonMedium"
+                Grid.Row="3" 
+                Content="medium"
+                Click="buttonMedium_Click"/>
+
+        <Label x:Name="labelSinister"
+               Grid.Column="1"
+               Grid.Row="1"/>
+        
+        <Label x:Name="labelDexter"
+               Grid.Column="2"
+               Grid.Row="2"/>
+        
+        <Label x:Name="labelMedium"
+               Grid.Column="3"
+               Grid.Row="3"/>
+
+    </Grid>
+</Window>
